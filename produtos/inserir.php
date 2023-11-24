@@ -28,6 +28,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+ <link rel="stylesheet" href="style.css">
     <title>Produtos - Inserir</title>
 </head>
     <body>
@@ -75,10 +79,12 @@
                 </p>
                 <button type="submit" name="inserir">inserir Produto</button>
             </form>
+
+            <p class="paragrafo"><a class="link"  href="listar.php"><button type="button" class="btn btn-secondary">Voltar para a lista de produtos</button></a></p>
+          <p><a href="../index.html"><button type="button" class="btn btn-warning">Home</button></a></p>
+
         </div>
 
-        <p><a href="listar.php">Voltar para a Lista de Produtos</a></p>
-        <p><a href="../index.html">Home</a></p>
-
+        
     </body>
 </html>

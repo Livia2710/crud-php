@@ -9,6 +9,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content= "IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+   <link rel="stylesheet" href="../style.css">
+
     <title>Fabricantes</title>
 </head>
 <body>
@@ -17,7 +23,7 @@
         <hr>
         <h2>Lendo e carregando todos os fabricantes</h2>
 
-        <p><a href="inserir.php" style="color:Blue;">Inserir um novo fabricante</a></p>
+        <p><button type="button" class="btn btn-primary"><a class="link" href="inserir.php">Inserir um novo fabricante</a></button></p>
 
         <!-- _____________________________________________ -->
         <!-- Trecho para exibir a mensagem s eclicar botão atualizar -->
@@ -50,7 +56,7 @@
                      <td> <?=$fabricante['id']?></td>
                      <td> <?=$fabricante['nome']?></td>
                      <!-- Link dinâmico -->
-                     <td><a href="atualizar.php?id=<?=$fabricante['id']?>" style = "color:red;">Excluir</a></td>
+                     <td><a href="atualizar.php?id=<?=$fabricante['id']?>" class="btn btn-danger">Excluir</a></td>
 
                      <!-- Solução mais simples para carregar antes de excluir -->
                      <!-- Colocar depois do <a: onclick="return confirm('Deseja excluir o item ?')" -->
